@@ -1,0 +1,18 @@
+server:
+  port: 8282
+
+spring:
+
+  profiles:
+    active: dev
+  application:
+    name: demo-dailyinfo-cb
+
+urls:
+  cbr: 'https://www.cbr.ru/DailyInfoWebServ/DailyInfo.asmx'
+
+services:
+  key-rate:
+    name: 'KeyRate'
+    method: 'KeyRateXML'
+    path: '//KeyRate/KR'
